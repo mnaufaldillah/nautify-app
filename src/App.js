@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 
+const spotify_secret_key = process.env.SPOTIFY_KEY;
+
 function App() {
   return (
     <div className="App">
