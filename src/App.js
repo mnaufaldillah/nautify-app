@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import data from './data';
+import Image from './components/home/image';
+import Information from './components/home/infromation';
 
 const spotify_secret_key = process.env.SPOTIFY_KEY;
 
@@ -9,12 +11,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <div id="playlist" class="contact-playlist">
-          <img src={data.album.images[1].url} alt="" />
-          <h3>{data.name}</h3>
-          <p>{data.artists[0].name}</p>
-          <p>{data.album.name}</p>
-
-          <input type="button" value="Select" />
+          <Image url={data.album.images[1].url} />
+          <Information titleName={data.name} artistName={data.artists[0].name} albumName={data.album.name} />
         </div>
       </header>
     </div>
