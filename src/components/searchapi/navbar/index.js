@@ -1,8 +1,8 @@
 import Button from '../button';
 import { FaSpotify } from 'react-icons/fa';
-import { redirect } from '../../lib/auth.js';
-import SearchBar from '../searchBar';
+import SearchBar from '../searchbar';
 import Profile from "../profile";
+import { redirect } from '../../../lib/auth';
 
 const Navbar = ({userData, handleSearch}) => {
   const isAuth = userData?.access_token !== undefined;
