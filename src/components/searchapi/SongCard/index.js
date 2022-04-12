@@ -1,5 +1,6 @@
 import Button from "../button";
 import Link from "../link";
+import './style.css';
 
 const SongCard = ({data}) => {
     const {album, artists, external_urls, name} = data;

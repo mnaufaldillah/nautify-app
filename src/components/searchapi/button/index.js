@@ -1,3 +1,5 @@
+import './style.css';
+
 const Button = ({leftIcon, children, ...props}) => {
     return (
       <button className='btn' {...props}>

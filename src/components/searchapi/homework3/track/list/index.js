@@ -1,4 +1,5 @@
 import React from "react";
+import './app.css';
 
 const List = ({data, id, title, img, artists, album, select,deselect, isSelected}) => {
 
