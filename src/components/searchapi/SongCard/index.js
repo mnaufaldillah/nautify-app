@@ -1,6 +1,6 @@
 import Button from "../button";
 import Link from "../link";
-import './style.css';
+import "./style.css";
 
 const SongCard = ({data}) => {
     const {album, artists, external_urls, name} = data;
@@ -16,22 +16,22 @@ const SongCard = ({data}) => {
     });
 
     return (
-        <div className='card'>
-        <div className='img-container'>
+        <div className="card">
+        <div className="img-container">
             <Link href={album.external_urls.spotify}>
             <img
-                className='albumImg'
+                className="albumImg"
                 src={album.images[1].url}
                 alt={album.name}
                 />
             </Link>
             </div>
-            <div className='description'>
+            <div className="description">
             <div>
-                <h4 className='title'>
+                <h4 className="title">
                 <Link href={external_urls.spotify}>{name}</Link> -{artistText}
                 </h4>
-                <h5 className='albumText'>
+                <h5 className="albumText">
                 <Link href={album.external_urls.spotify}>{album.name}</Link>
                 </h5>
             </div>

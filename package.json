@@ -12,6 +12,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "0.19.2",
     "bootstrap": "4.5.2",
+    "eslint-plugin-react": "^7.29.4",
     "lodash": "4.17.19",
     "prop-types": "15.7.2",
     "react": "^17.0.2",

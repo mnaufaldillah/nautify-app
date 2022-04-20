@@ -1,3 +1,5 @@
+import React from "react";
+
 const Link = ({ children, isExternal = true, ...props}) => {
     return (
        <a

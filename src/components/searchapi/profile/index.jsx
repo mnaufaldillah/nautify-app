@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "../link";
 import style from "./style.module.css";
 

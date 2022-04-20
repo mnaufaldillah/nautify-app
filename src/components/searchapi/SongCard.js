@@ -1,9 +1,9 @@
-import * as React from 'react';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
+import * as React from "react";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import Typography from "@mui/material/Typography";
+import { CardActionArea } from "@mui/material";
 
 const SongCard = ({title, artist, imageURL, url}) => {
     return (
@@ -26,6 +26,6 @@ const SongCard = ({title, artist, imageURL, url}) => {
             </CardActionArea>
         </Card>
     );
-}
+};
 
 export default SongCard;

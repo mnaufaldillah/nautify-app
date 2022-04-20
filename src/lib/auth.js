@@ -9,7 +9,7 @@ const generateRandomString = (length) => {
     result += characters.charAt(Math.floot(Math.random() * charactersLength));
   }
   return result;
-}
+};
 
 
 const redirect = () => {

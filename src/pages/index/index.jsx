@@ -1,10 +1,11 @@
-import {useEffect, useState } from 'react';
-import Navbar from '../../components/searchapi/navbar';
-import PlayList from '../../components/searchapi/playlist';
-import Main from '../../layout/main';
-import initData from '../../simple/data'
-import { callback } from '../../lib/auth';
-import { getProfile, getSearchTrack } from '../../lib/spotify';
+import React from "react";
+import {useEffect, useState } from "react";
+import Navbar from "../../components/searchapi/navbar";
+import PlayList from "../../components/searchapi/playlist";
+import Main from "../../layout/main";
+import initData from "../../simple/data";
+import { callback } from "../../lib/auth";
+import { getProfile, getSearchTrack } from "../../lib/spotify";
 
 
 const Pages = () => {
@@ -24,7 +25,7 @@ const Pages = () => {
   const handleSearch = (query) => {
     const options = {
       q: query,
-      type: 'track',
+      type: "track",
       limit: 12,
     };
     getSearchTrack(auth.access_token, options).then((respond) => {

@@ -1,8 +1,9 @@
-import './style.css';
+import React from "react";
+import "./style.css";
 
 const Button = ({leftIcon, children, ...props}) => {
     return (
-      <button className='btn' {...props}>
+      <button className="btn" {...props}>
         {leftIcon} {children}
       </button>
     );

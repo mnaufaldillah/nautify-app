@@ -19,6 +19,7 @@ module.exports = {
     ],
     "rules": {
         "semi": ["error", "always"],
+        "react/prop-types": "off",
         "quotes": ["error", "double"]
     }
 }

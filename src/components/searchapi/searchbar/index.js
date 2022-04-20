@@ -1,9 +1,10 @@
-import {useState} from 'react';
-import {FaSearch} from 'react-icons/fa';
-import Button from '../button';
+import React from "react";
+import {useState} from "react";
+import {FaSearch} from "react-icons/fa";
+import Button from "../button";
 
 const SearchBar = ({handleSearch}) => {
-    const [query, setQuery] = useState('');
+    const [query, setQuery] = useState("");
     const onSubmit = (e) => {
       e.preventDefault();
       query !== "" && handleSearch(query);
